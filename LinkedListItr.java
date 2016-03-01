@@ -23,4 +23,5 @@ public class LinkedListItr{
     * move current to its next position. Nothing is done
     * if current is null.
     */
-    public void advance( ){}
+    public void advance( {}
+}

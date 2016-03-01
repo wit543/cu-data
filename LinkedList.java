@@ -41,7 +41,8 @@ public class LinkedList {
      */
     public void reverse(){
         LinkedListItr self = first();
-        while(self.isPastEnd()){
+        zeroth().current.next=null;
+        while(!self.isPastEnd()){
             ListNode temp = self.current;
             self.advance();
             temp.next=first().current;
