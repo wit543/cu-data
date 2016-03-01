@@ -42,10 +42,11 @@ public class LinkedList {
     public void reverse(){
         LinkedListItr self = first();
         while(self.isPastEnd()){
-            int temp = self.retrieve();
-            remove(temp);
-            insert(temp,zeroth());
+            ListNode temp = self.current;
             self.advance();
+            temp.next=first().current;
+            zeroth().current.next=temp;
+
         }
     }
 }
