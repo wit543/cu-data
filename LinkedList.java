@@ -25,8 +25,7 @@ public class LinkedList {
      */
     public LinkedListItr remove(LinkedListItr itr){
         LinkedListItr self = first();
-        whil
-        e (self.isPastEnd()){
+        while (self.isPastEnd()){
             if(itr.current.next.element==self.retrieve()){
                 self.current.element=-1;
                 return self;
